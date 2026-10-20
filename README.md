@@ -177,6 +177,11 @@ You can set these variables in a `.env` file in the project root.
 bun run dev
 ```
 
+## CI
+
+A GitHub Actions workflow (`.github/workflows/ci.yml`) runs on every pull request and push to `main`. It performs a
+syntax check (`node --check`) on all source files in `src/`.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
